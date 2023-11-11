@@ -1,0 +1,102 @@
+body {
+    background: url('https://cdn.pixabay.com/photo/2016/11/22/22/24/adult-1850925_1280.jpg') no-repeat;
+    color: white;
+    background-size: cover;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.left {
+    width: 21rem;
+    position: sticky;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 3% 0% 3% 2%;
+    text-align: center;
+}
+
+#i {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left img {
+    width: 7rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-left: 4%;
+    text-align: left;
+    font-size: 140%;
+    width: 100%;
+}
+
+.b {
+    color: white;
+    font-weight: bolder;
+    background-color: black;
+    margin: 0.5%;
+    padding: 0.5%;
+}
+
+:placeholder-shown {
+    position: relative;
+    width: 20%;
+}
+
+#c {
+    font-weight: bolder;
+    background-color: white;
+    margin: 1% 0.5% auto;
+    padding: 0.5%;
+    width: 10%;
+    border-radius: 7px;
+}
+
+.right {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    right: 3%;
+    top: 3%;
+}
+#m{
+    margin-top: 5%;
+    background-color: rgb(235, 84, 84);
+    border: 1px solid rgb(235, 84, 84);;
+    border-radius: 7px;
+    padding: 2%;
+}
+button:hover{
+    cursor: pointer;
+    padding: 2rem;
+}
+@media (max-width: 650px) {
+    :placeholder-shown {
+        width: 40%;
+        margin: 1%;
+    }
+
+    #c {
+        width: 30%;
+        margin-top: 2%;
+    }
+}
+@media (max-width: 576px){
+    .right{
+        font-size: 90%;
+        width: 15%;
+        text-align: center;
+        align-items: center;
+        right: 1em;
+    }
+}
+@media (max-width: 345px){
+    .left{
+        font-size: 2.1rem;
+    }
+}
